@@ -61,9 +61,7 @@ func main() {
 		return
 	}
 	fmt.Println("send resp", sendResp)
-	if true {
-		return
-	}
+
 	// receive message
 	receiveParam := &sqs.ReceiveMessageInput{
 		QueueUrl: aws.String(*createQueueResp.QueueUrl),
